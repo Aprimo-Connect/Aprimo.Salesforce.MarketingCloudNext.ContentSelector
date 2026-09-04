@@ -1,0 +1,12 @@
+# Salesforce CLI local state
+.sf/
+.sfdx/
+.localdevserver/
+deploy-options.json
+
+# LWC VSCode autocomplete
+**/lwc/jsconfig.json
+
+# OS files
+.DS_Store
+Thumbs.db

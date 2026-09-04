@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Findings sink for the bridge spike.
+
+    The CMS editor unmounts the picker the moment assetselected fires, taking any in-component
+    diagnostics with it. Writing them to a record makes them outlive the modal — and makes them
+    queryable from the CLI rather than copy-pasted out of a UI that is closing.
+-->
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Diagnostic output from the Aprimo selector bridge spike.</description>
+    <enableActivities>false</enableActivities>
+    <!-- Sharing, Bulk API, and Streaming API must all be enabled or all disabled together. -->
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <label>Bridge Finding</label>
+    <nameField>
+        <displayFormat>BF-{00000}</displayFormat>
+        <label>Finding Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Bridge Findings</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

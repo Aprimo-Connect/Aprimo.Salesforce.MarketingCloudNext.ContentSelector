@@ -1,0 +1,4 @@
+/* Layout comes from SLDS utility classes in the template. */
+:host {
+    display: block;
+}

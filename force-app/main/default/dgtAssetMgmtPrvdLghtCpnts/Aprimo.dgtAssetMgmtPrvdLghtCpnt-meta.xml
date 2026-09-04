@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DgtAssetMgmtPrvdLghtCpnt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dgtAssetMgmtProvider>Aprimo</dgtAssetMgmtProvider>
+    <lightningComponentBundle>aprimoSelectorBridge</lightningComponentBundle>
+    <masterLabel>Aprimo Content Selector bridge</masterLabel>
+    <type>DIGITAL_ASSET_MANAGER</type>
+</DgtAssetMgmtPrvdLghtCpnt>

@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-p-around_small">
+        <template lwc:if={isLoading}>
+            <lightning-spinner alternative-text="Loading Aprimo configuration" size="small"></lightning-spinner>
+        </template>
+
+        <template lwc:if={hasError}>
+            <div class="slds-text-color_error">{configError}</div>
+        </template>
+
+        <template lwc:if={ready}>
+            <p class="slds-m-bottom_x-small">Browse and select brand-approved assets from Aprimo.</p>
+            <lightning-button
+                label="Open Aprimo"
+                variant="brand"
+                icon-name="utility:new_window"
+                onclick={handleOpen}
+            ></lightning-button>
+        </template>
+    </div>
+</template>
