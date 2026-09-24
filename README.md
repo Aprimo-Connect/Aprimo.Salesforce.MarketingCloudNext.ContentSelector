@@ -4,6 +4,28 @@ A Salesforce CMS external content provider that lets content authors pick assets
 Aprimo DAM directly inside the CMS content editor (Enhanced CMS Workspaces), including
 Marketing Cloud Next's Content workspaces.
 
+## Aprimo's Open Source Policy
+
+This code is provided by Aprimo as-is as an example of how you might solve a specific
+business problem. It is not intended for direct use in Production without modification.
+
+You are welcome to submit issues or feedback to help us improve visibility into potential
+bugs or enhancements. Aprimo may, at its discretion, address minor bugs, but does not
+guarantee fixes, vulnerability remediation or ongoing support.
+
+It is expected that developers who clone or use this code take full responsibility for
+supporting, maintaining, securing, and vulnerability management of any deployments derived
+from it.
+
+If you are interested in a production-ready and supported version of this solution, please
+contact your Aprimo account representative. They can connect you with our technical
+services team or a partner who may be able to build and support a packaged implementation
+for you.
+
+Please note: This code may include references to non-Aprimo services or APIs. You are
+responsible for acquiring any required credentials or API keys to use those
+services—Aprimo does not provide them.
+
 **How it works:** the bridge opens Aprimo's hosted Content Selector (`/dam/selectcontent`)
 in a popup, receives the chosen asset over `postMessage`, and hands the asset's public-link
 URL back to Salesforce CMS as external content. No Aprimo REST API integration is
@@ -40,6 +62,13 @@ on a plain Developer Edition scratch org with no Data Cloud/MC Next features ena
 we couldn't independently confirm is whether Enhanced CMS Workspaces itself ships enabled
 by default in every edition — if **Content** doesn't appear as a tab/app for you, enable it
 under Setup > Digital Experiences first.
+
+**This install requires Salesforce administration/development expertise.** These steps
+were validated against Aprimo's own Salesforce environment. Your production or sandbox org
+is very likely configured differently — different edition, permissions model, CMS setup,
+namespace collisions, security review requirements, etc. — and should be expected to need
+additional configuration or development work to get this running correctly in your
+environment. Treat this as a working starting point, not a drop-in package.
 
 ## Install
 
@@ -120,4 +149,4 @@ instances with unique keys and matching config records — see the comments in
 
 ## License
 
-_Add your organization's license of choice before publishing._
+BSD 3-Clause License — see [LICENSE](LICENSE).
