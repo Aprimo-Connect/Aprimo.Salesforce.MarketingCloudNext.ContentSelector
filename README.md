@@ -92,7 +92,7 @@ registration script below.
 `aprimo_dam.cspTrustedSite-meta.xml` allowlists your tenant domain
 (`*.dam.aprimo.com`) for the picker UI itself, but the actual **image files** selected
 assets resolve to are served from a separate delivery/CDN domain that is specific to your
-Aprimo pod (for example `p1.aprimocdn.net`, or a sandbox-labeled variant like
+Aprimo environment (for example `p1.aprimocdn.net`, or a sandbox-labeled variant like
 `p1.sb.aprimocdn.net`). This can't be generalized with a wildcard — Salesforce's
 `CspTrustedSite` wildcard only matches one subdomain label, so `*.aprimocdn.net` will not
 cover a two-label host like `p1.sb.aprimocdn.net`.
